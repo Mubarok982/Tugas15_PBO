@@ -74,12 +74,22 @@ if (!isset($_SESSION['user_id'])) {
             color: #007acc; 
             margin-bottom: 20px;
         }
+
+        .logout-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
     </style>
 </head>
 <body>
 
+<div class="logout-btn">
+    <a href="logout.php" class="btn btn-danger btn-sm">Log Out</a>
+</div>
+
 <div class="welcome">
-    <?php echo "Selamat datang, " . $_SESSION['username']; ?>
+    <?php echo "Selamat datang 😊, " . $_SESSION['username']; ?>
 </div>
 
 <div class="container mt-4">
